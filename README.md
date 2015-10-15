@@ -5,6 +5,7 @@ Docker container for shipping Lumen apps
 
   Copy the Dockerfile to the project root
 
+    wget https://raw.githubusercontent.com/gayanhewa/lumen-container/master/Dockerfile
 
   Build the container :
 

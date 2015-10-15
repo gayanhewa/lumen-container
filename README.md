@@ -39,3 +39,10 @@ Docker container for shipping Lumen apps
   Once commited you can publish :
 
     docker push <your-user-name>/<image-name>:<tag>
+
+
+### Lumen Enviorment Variables 
+
+  In you can either add the .env file to the project root or use Dockerfile to update the env variable values [supported](https://github.com/laravel/lumen/blob/master/.env.example) by lumen.
+  
+  For an example the definition of the DB_CONNECTION can be found in the Dockerfile.

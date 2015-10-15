@@ -9,13 +9,16 @@ Docker container for shipping Lumen apps
 
   Build the container :
 
-    docker build -t myapp .
+    docker build -t <my-app-name> .
 
 
   Run the container :
 
-    docker run -d -p 8080:80 myapp
+    docker run -d -p 8080:80 <my-app-name>
 
+  When we are developing the application , it becomes cumbersome to rebuild each time to test a change. To overcome this you can mount a local directory / file as a mounted volume into the container. It can be done in the following manner.
+  
+    docker run -d -v /local/directory/path:/var/www -p 80:80 <my-app-name>
 
   Access the app on http://localhost:8080
 
